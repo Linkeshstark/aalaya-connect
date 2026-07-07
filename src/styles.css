@@ -134,6 +134,11 @@
   -webkit-backdrop-filter: saturate(180%) blur(14px);
 }
 
+/* Hide Lovable watermark/badge */
+#lovable-badge {
+  display: none !important;
+}
+
 /* Floating deepam particles for the login page */
 @utility particle {
   position: absolute;
