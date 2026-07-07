@@ -28,7 +28,7 @@ function Create() {
   const [caption, setCaption] = useState("");
   const [location, setLocation] = useState("");
 
-  const next = () => setStep((s) => Math.min(3, s + 1) as Step);
+  const next = () => setStep((s) => (Math.min(3, s + 1) as Step));
   const back = () => (step === 0 ? navigate({ to: "/home" }) : setStep((s) => (s - 1) as Step));
 
   const titles = ["Choose media", "Crop", "Filters & adjust", "New post"];
